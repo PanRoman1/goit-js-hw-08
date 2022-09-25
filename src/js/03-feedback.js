@@ -1,4 +1,11 @@
 import throttle from 'lodash.throttle';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
+Notify.init({
+  width: '400px',
+  position: 'center-top',
+  fontSize: '18px',
+});
 
 const form = document.querySelector('.feedback-form');
 // const email = document.querySelector('.feedback-form input');
